@@ -22,11 +22,11 @@ html(lang='en')
         h4 Contact me
         form(action='/contact', method='POST')
           p name
-          input(type='text', name='name')
+          input(type='text', name='name', placeholder='Name', required='true')
           p e-mail
-          input(type='text', name='email')
+          input(type='email', name='email', placeholder='email', required='true')
           p message
-          textarea(name='message')
+          textarea(name='message', placeholder="Message", required='true')
           .align-center
             input(type='submit', value='write')
     header

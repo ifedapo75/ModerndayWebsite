@@ -478,6 +478,20 @@ header .logo {
 	outline: none;
 	margin-bottom: 25px;
 }
+.contact-popup form input[type="email"] {
+	width: 100%;
+	border: 1px solid #373737;
+	padding: 5px;
+	outline: none;
+	margin-bottom: 25px;
+}
+.contact-popup form input[type="date"] {
+	width: 100%;
+	border: 1px solid #373737;
+	padding: 5px;
+	outline: none;
+	margin-bottom: 25px;
+}
 .contact-popup form textarea {
 	resize: none;
 	width: 100%;
