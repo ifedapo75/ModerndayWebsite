@@ -1,5 +1,234 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Vogue
+    meta(name='description', content='Here goes description')
+    meta(name='author', content='author name')
+    link(rel='shortcut icon', href='images/favicon.ico', type='image/x-icon')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    // Style CSS + Google Fonts
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/screen.css')
+    link(rel='stylesheet', href='css/swipebox.css')
+    link(href='https://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css')
+  body
+    // Modal
+    #contact-us.contact-popup.modal.fade(tabindex='-1', role='dialog')
+      .modal-dialog(role='document')
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+        h4 Contact me
+        form(action='/contact', method='POST')
+          p name
+          input(type='text', name='name')
+          p e-mail
+          input(type='text', name='email')
+          p message
+          textarea(name='message')
+          .align-center
+            input(type='submit', value='write')
+    header
+      .container
+        .logo
+          a(href='/', style='color: inherit; text-decoration: none !important;')
+            h1 Modern Day Agency
+            h4(style="font-family: 'Bad Script', cursive;") Fashion Blog
+            //img(src='images/logo.png', alt='logo')
+        nav.main-nav
+          .responsive-menu
+            i.fa.fa-bars
+          ul
+            li.current-page
+              a(href='/') Home
+            li
+              a(href='#') Categories
+              ul
+                li
+                  a(href='category.html') Category Sidebar
+                li
+                  a(href='category-full.html') Category Full
+            li
+              a(href='#') Pages
+              ul
+                li
+                  a(href='index-2.html') Homepage v2
+                li
+                  a(href='about.html') About Me
+                li
+                  a(href='post.html') Single Post
+                li
+                  a(href='error-404.html') Error 404
+            li
+              a(href='#', data-toggle='modal', data-target='#contact-us') Contact
+    .container
+      // SLIDER
+      .the-slider.mt-40(data-tesla-plugin='slider', data-tesla-item='.slide', data-tesla-next='.slide-right', data-tesla-prev='.slide-left', data-tesla-container='.slide-wrapper')
+        .slide-arrows
+          .slide-left
+            i.fa.fa-angle-left
+          .slide-right
+            i.fa.fa-angle-right
+        ul.slide-wrapper
+          li.slide
+            .slide-text
+              h2 My casual styling: jewelry vision
+              a(href='#') Read more
+            img.slider-image(src='images/slide-1.jpg', alt='sport 6')
+          li.slide
+            .slide-text
+              h2 My casual styling: jewelry vision
+              a(href='#') Read more
+            img.slider-image(src='images/slide-2.jpg', alt='sport 6')
+          li.slide
+            .slide-text
+              h2 My casual styling: jewelry vision
+              a(href='#') Read more
+            img.slider-image(src='images/slide-3.jpg', alt='sport 6')
+        .container
+          ul.the-bullets-dots(data-tesla-plugin='bullets')
+            li.active
+            li
+            li
+      // SLIDER
+      .small-widget
+        h4.widget-title About me
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit, ligula ut venenatis imperdiet, est tellus rhoncus sapien, et congue diam eros id nisl. Nunc ultricies porttitor ipsum sed dictum.
+      // CONTENT
+      .content.full-width-blog
+        // POST
+        .blog-post
+          .post-cover
+            a(href='post.html')
+              img(src='images/post-13.jpg', alt='post')
+          .post-header
+            h4
+              a(href='#') Travel
+            h2
+              a(href='post.html') My casual styling: pink coat
+          .post-content
+            p
+              | Proof there exists a non-awkward way to grow out your bangs? See Sienna 0aMiller at the Harper's Bazaar Women of the Year Awards. All you have to do is spritz a bit of volume spray at your roots (try Bumble and bumble Dryspun Finish, £10), twist your bangs away from your face, then hold in place with a bobby pin.
+          .post-footer
+            a(href='post.html')
+              | Read more
+              i.fa.fa-caret-right
+        // POST
+        // POST
+        .blog-post
+          .post-cover
+            a(href='post.html')
+              img(src='images/post-14.jpg', alt='post')
+          .post-header
+            h4
+              a(href='#') Travel
+            h2
+              a(href='post.html') My wonderfull trip to the sea
+          .post-content
+            p
+              | Proof there exists a non-awkward way to grow out your bangs? See Sienna 0aMiller at the Harper's Bazaar Women of the Year Awards. All you have to do is spritz a bit of volume spray at your roots (try Bumble and bumble Dryspun Finish, £10), twist your bangs away from your face, then hold in place with a bobby pin.
+          .post-footer
+            a(href='post.html')
+              | Read more
+              i.fa.fa-caret-right
+        // POST
+        // POST
+        .blog-post
+          .post-cover
+            a(href='post.html')
+              img(src='images/post-15.jpg', alt='post')
+          .post-header
+            h4
+              a(href='#') Travel
+            h2
+              a(href='post.html') Downtown
+          .post-content
+            p
+              | Proof there exists a non-awkward way to grow out your bangs? See Sienna 0aMiller at the Harper's Bazaar Women of the Year Awards. All you have to do is spritz a bit of volume spray at your roots (try Bumble and bumble Dryspun Finish, £10), twist your bangs away from your face, then hold in place with a bobby pin.
+          .post-footer
+            a(href='post.html')
+              | Read more
+              i.fa.fa-caret-right
+        // POST
+        ul.pagination-section
+          li 1
+          li
+            a(href='#') 2
+          li
+            a(href='#') 3
+          li
+            a(href='#') 4
+    footer
+      .container
+        nav.main-nav
+          ul
+            li
+              a(href='#') Home
+            li
+              a(href='#') Fashion
+            li
+              a(href='#') Food
+            li
+              a(href='#') Pages
+            li
+              a(href='#') Contact
+        .row.footer-instagram
+          .instagram-title From Intagram
+          .col-md-3.col-sm-4.col-xs-6.col-lg-2
+            a(href='#')
+              img(src='images/instagram-1.jpg', alt='instagram')
+          .col-md-3.col-sm-4.col-xs-6.col-lg-2
+            a(href='#')
+              img(src='images/instagram-2.jpg', alt='instagram')
+          .col-md-3.col-sm-4.col-xs-6.col-lg-2
+            a(href='#')
+              img(src='images/instagram-3.jpg', alt='instagram')
+          .col-md-3.col-sm-4.col-xs-6.col-lg-2
+            a(href='#')
+              img(src='images/instagram-4.jpg', alt='instagram')
+          .col-md-3.col-sm-4.col-xs-6.col-lg-2
+            a(href='#')
+              img(src='images/instagram-5.jpg', alt='instagram')
+          .col-md-3.col-sm-4.col-xs-6.col-lg-2
+            a(href='#')
+              img(src='images/instagram-6.jpg', alt='instagram')
+          .col-md-3.col-sm-4.col-xs-6.col-lg-2
+            a(href='#')
+              img(src='images/instagram-7.jpg', alt='instagram')
+          .col-md-3.col-sm-4.col-xs-6.col-lg-2
+            a(href='#')
+              img(src='images/instagram-8.jpg', alt='instagram')
+          .col-md-3.col-sm-4.col-xs-6.col-lg-2
+            a(href='#')
+              img(src='images/instagram-9.jpg', alt='instagram')
+          .col-md-3.col-sm-4.col-xs-6.col-lg-2
+            a(href='#')
+              img(src='images/instagram-10.jpg', alt='instagram')
+          .col-md-3.col-sm-4.col-xs-6.col-lg-2
+            a(href='#')
+              img(src='images/instagram-11.jpg', alt='instagram')
+          .col-md-3.col-sm-4.col-xs-6.col-lg-2
+            a(href='#')
+              img(src='images/instagram-12.jpg', alt='instagram')
+        .row.copyright
+          .col-md-6.col-sm-6.col-xs-6
+            p Copyright 2016 Vogue
+          .col-md-6.col-sm-6.col-xs-6
+            p.align-right
+              | Developed by 
+              a(href='www.teslathemes.com', target='_blank') Teslathemes
+    // === scripts ===
+    script(src='js/jquery-2.1.4.min.js', type='text/javascript')
+    script(src='js/jquery-ui.js', type='text/javascript')
+    script(src='js/imagesloaded.pkgd.min.js', type='text/javascript')
+    script(src='js/bootstrap.min.js', type='text/javascript')
+    script(src='js/masonry.pkgd.js', type='text/javascript')
+    script(src='js/plugins.js', type='text/javascript')
+    script(src='js/jquery.swipebox.min.js', type='text/javascript')
+    script(src='js/instagram.js', type='text/javascript')
+    script(src='js/options.js', type='text/javascript')
+    //if lt IE 9
+      script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+    // === scripts ===
