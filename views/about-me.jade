@@ -1,0 +1,115 @@
+//
+   Created by orajiakuchukwudalu on 2016-04-28.
+extends layout
+
+block content
+   .container
+      h1.site-title About me
+      .row
+         .col-md-8
+            // CONTENT
+            .content
+               // POST
+               .blog-post
+                  .post-cover
+                     img(src='images/about.jpg', alt='post')
+                  .post-content
+                     p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel gravida magna. Curabitur vehicula sapien ut lorem viverra, ut lobortis purus commodo. Morbi viverra maximus diam. Sed consequat nisi eget mi euismod sagittis. Vestibulum quis tellus venenatis, scelerisque erat et, pretium nibh. Nullam eu velit augue. Aenean condimentum mattis nibh. Pellentesque blandit ut elit at sagittis.
+                     p
+                        | Phasellus ac turpis maximus, viverra nulla eget, maximus dui. Curabitur aliquet ultrices semper. Donec ultricies non erat ac fermentum. Maecenas rhoncus ultricies orci, non vehicula massa feugiat ut. Morbi ut lobortis nibh. Praesent feugiat est nibh, eget elementum turpis tempor non. Sed ultrices mi nibh, sodales placerat urna faucibus sed. Duis ornare, dolor eu accumsan placerat, nibh.
+                     .s-testimonial
+                        p
+                           | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit, ligula ut venenatis imperdiet, est tellus rhoncus sapien, et congue diam eros id nisl. Nunc ultricies porttitor ipsum sed dictum.
+                        h4 Jessy Johnson
+                     ul
+                        li Phasellus ac turpis maximus, viverra nulla eget, maximus dui
+                        li Curabitur aliquet ultrices semper. Donec ultricies non erat ac fermentum
+                        li Sed ultrices mi nibh
+                  .post-footer
+                     ul.socials
+                        li
+                           a(href='#')
+                              i.fa.fa-facebook
+                        li
+                           a(href='#')
+                              i.fa.fa-twitter
+                        li
+                           a(href='#')
+                              i.fa.fa-instagram
+               // POST
+         .col-md-4
+            // SIDEBAR
+            .main-sidebar
+               .widget.widget-about
+                  h3.widget-title About me
+                  p
+                     | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit, ligula ut venenatis imperdiet, est tellus rhoncus sapien, et congue diam eros id nisl. Nunc ultricies porttitor ipsum sed dictum.
+               .widget.widget-socials
+                  ul.socials
+                     li
+                        a(href='#')
+                           i.fa.fa-facebook
+                           | Follow me on facebook
+                     li
+                        a(href='#')
+                           i.fa.fa-twitter
+                           | Reply me on twitter
+                     li
+                        a(href='#')
+                           i.fa.fa-youtube-play
+                           | Watch me on youtube
+                     li
+                        a(href='#')
+                           i.fa.fa-instagram
+                           | Follow me on instagram
+               .widget.widget-categories
+                  h3.widget-title Categories
+                  ul
+                     li
+                        a(href='#')
+                           i.fa.fa-caret-right
+                           | Shopping (2)
+                     li
+                        a(href='#')
+                           i.fa.fa-caret-right
+                           | Beauty (15)
+                     li
+                        a(href='#')
+                           i.fa.fa-caret-right
+                           | Makeup (28)
+                     li
+                        a(href='#')
+                           i.fa.fa-caret-right
+                           | Jewelry (19)
+               .widget.widget-popular
+                  h3.widget-title Popular news
+                  ul
+                     li
+                        a(href='post.html')
+                           img(src='images/popular-1.jpg', alt='popular')
+                        h4
+                           a(href='post.html') Beauty secrets
+                        p february 8
+                     li
+                        a(href='post.html')
+                           img(src='images/popular-2.jpg', alt='popular')
+                        h4
+                           a(href='post.html') Little secrets
+                        p february 2
+               .widget.widget-add
+                  a(href='#')
+                     img(src='images/add-1.jpg', alt='add')
+               .widget.widget-instagram
+                  h3.widget-title From instagram
+                  ul.instagram
+                     li
+                        a(href='#')
+                           img(src='images/instagram-s1.jpg', alt='instagram')
+                     li
+                        a(href='#')
+                           img(src='images/instagram-s2.jpg', alt='instagram')
+                     li
+                        a(href='#')
+                           img(src='images/instagram-s3.jpg', alt='instagram')
+

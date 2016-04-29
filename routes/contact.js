@@ -28,7 +28,7 @@ router.post('/', function(req, res, next) {
                     /* more items */
                 ],
                 ToAddresses: [
-                    email
+                    'chukwudalurjk@gmail.com'
                     /* more items */
                 ]
             },
