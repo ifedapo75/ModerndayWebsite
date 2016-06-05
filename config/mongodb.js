@@ -2,8 +2,7 @@
  * Created by orajiakuchukwudalu on 2016-03-19.
  */
 var mongoose = require('mongoose');
-//var mongodbURL = 'mongodb://localhost/yfooty';
-var mongodbURL = 'mongodb://orajiaku:yfootypassword@ds025439.mlab.com:25439/yfooty';
+var mongodbURL = 'mongodb://localhost/dapo';
 var mongodbOptions = { };
 
 
