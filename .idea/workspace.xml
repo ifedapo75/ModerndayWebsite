@@ -2,34 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="106015f0-69ce-4982-aaaa-8254e7fc4469" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.c9/.nakignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.c9/metadata/tab0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.c9/metadata/tab1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.c9/metadata/tab10" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.c9/metadata/tab11" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.c9/metadata/tab12" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.c9/metadata/tab14" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.c9/metadata/tab8" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.c9/metadata/workspace/bin/www" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.c9/metadata/workspace/models/postSchema.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.c9/metadata/workspace/public/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.c9/metadata/workspace/public/css/screen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.c9/metadata/workspace/public/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.c9/metadata/workspace/routes/aboutme.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.c9/metadata/workspace/routes/categories.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.c9/metadata/workspace/routes/gallery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.c9/metadata/workspace/routes/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.c9/metadata/workspace/routes/users.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.c9/project.settings" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WEBSITE/Modernday-bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WEBSITE/Modernday-bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WEBSITE/Modernday-glyphicons-halflings-regular.svg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/website_node_modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/website.iml" afterPath="$PROJECT_DIR$/.idea/website.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="website.iws" />
@@ -319,12 +291,12 @@
       <option name="presentableId" value="Default" />
       <updated>1461626211373</updated>
       <workItem from="1496948576211" duration="3117000" />
-      <workItem from="1497826613971" duration="458000" />
+      <workItem from="1497826613971" duration="585000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3575000" />
+    <option name="totallyTimeSpent" value="3702000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="713" extended-state="6" />
